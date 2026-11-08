@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10182f">
+<title>MOON LIGHT STUDY'S</title>
+<style>
+:root{--bg:#0b1020;--panel:#131d36;--panel2:#1b2948;--ink:#f5f7ff;--muted:#a9b5d0;--gold:#f4c96b;--cyan:#71d8e8;--line:#2b3a5d;--red:#ff8791;--green:#8ce0b0}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#24365c 0,transparent 34%),var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
+button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:12px;padding:12px 16px;font-weight:700;background:var(--gold);color:#172039}button.secondary{background:#263657;color:var(--ink);border:1px solid var(--line)}button.danger{background:#5a2634;color:#ffe7eb}button:disabled{opacity:.5;cursor:not-allowed}
+.wrap{max-width:1120px;margin:auto;padding:22px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0 24px}.brand{display:flex;gap:12px;align-items:center}.moon{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#ffe7a3,#e7a93d);color:#1a2440;font-size:26px;box-shadow:0 0 30px #f4c96b55}.brand h1{font-size:clamp(20px,4vw,29px);margin:0;letter-spacing:.04em}.brand p{margin:3px 0 0;color:var(--muted);font-size:12px;letter-spacing:.15em}
+.hero{padding:36px 0 26px;max-width:760px}.eyebrow{color:var(--gold);font-size:12px;letter-spacing:.2em;font-weight:800}.hero h2{font-size:clamp(32px,6vw,56px);line-height:1.06;margin:12px 0}.hero p{color:var(--muted);font-size:16px;line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0}.role{background:linear-gradient(145deg,#192644,#111a30);border:1px solid var(--line);border-radius:20px;padding:23px;min-height:190px;display:flex;flex-direction:column;align-items:flex-start;gap:12px}.role .ico{font-size:28px}.role h3{margin:0;font-size:20px}.role p{margin:0;color:var(--muted);line-height:1.5;font-size:14px;flex:1}.role button{width:100%}
+.card{background:#111a30;border:1px solid var(--line);border-radius:18px;padding:22px;margin:16px 0}.hidden{display:none!important}.row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.muted{color:var(--muted)}.small{font-size:12px;color:var(--muted)}label{display:block;font-size:13px;color:#c8d2e8;margin:12px 0 6px}input,select,textarea{width:100%;padding:12px 13px;border:1px solid var(--line);border-radius:11px;background:#0b1428;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:var(--cyan)}.form{max-width:460px;margin:32px auto}.form h2{margin:0 0 6px}.form button{width:100%;margin-top:16px}.toolbar{display:flex;gap:8px;flex-wrap:wrap}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.tab{background:#1c2a49;color:var(--ink);border:1px solid var(--line)}.tab.active{background:var(--gold);color:#172039}
+.item{border:1px solid var(--line);background:#15213c;border-radius:14px;padding:15px;margin:10px 0}.item h3{margin:0 0 6px;font-size:17px}.meta{font-size:12px;color:var(--muted);margin-bottom:9px}.item p{color:#d2dbed;white-space:pre-wrap;line-height:1.5}.item a{color:var(--cyan)}.empty{text-align:center;color:var(--muted);padding:30px}.stat{padding:14px 16px;border-radius:14px;background:#192744;border:1px solid var(--line);min-width:130px;flex:1}.stat strong{font-size:25px;display:block;color:var(--gold)}.notice{padding:12px 14px;background:#302b1c;border:1px solid #66542a;border-radius:12px;color:#f8dfa2;font-size:13px;line-height:1.5}.success{color:var(--green)}.error{color:var(--red)}footer{padding:30px 0;color:#71809f;text-align:center;font-size:12px}
+@media(max-width:720px){.wrap{padding:16px}.grid{grid-template-columns:1fr}.role{min-height:unset}.top{align-items:flex-start}.hero{padding-top:18px}.card{padding:17px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+ <div class="brand"><div class="moon">☾</div><div><h1>MOON LIGHT STUDY'S</h1><p>LEARN • PRACTICE • ACHIEVE</p></div></div>
+ <div id="topActions" class="toolbar"></div>
+</header>
+<main>
+<section id="home">
+ <div class="hero"><div class="eyebrow">YOUR LEARNING SPACE</div><h2>জ্ঞান অর্জনের<br>নতুন ঠিকানা।</h2><p>শিক্ষক ও ছাত্রছাত্রীদের জন্য একটি সহজ ডিজিটাল স্টাডি প্ল্যাটফর্ম। এখানে নোটস, পরীক্ষার প্রস্তুতি এবং প্রয়োজনীয় ডকুমেন্ট এক জায়গায় পাওয়া যাবে।</p></div>
+ <div class="grid">
+  <article class="role"><div class="ico">🎓</div><h3>Student Panel</h3><p>শিক্ষকদের আপলোড করা নোটস ও পরীক্ষার বিষয়বস্তু দেখুন এবং প্রয়োজনীয় ফাইল ডাউনলোড করুন।</p><button onclick="showLogin('student')">Student Login →</button></article>
+  <article class="role"><div class="ico">📚</div><h3>Teacher Panel</h3><p>নতুন নোটস, পরীক্ষার নির্দেশিকা এবং ডকুমেন্ট আপলোড করে ছাত্রছাত্রীদের সঙ্গে শেয়ার করুন।</p><button onclick="showLogin('teacher')">Teacher Login →</button></article>
+  <article class="role"><div class="ico">⚙️</div><h3>Admin Panel</h3><p>কনটেন্ট পরিচালনা করুন, পোস্ট মুছুন এবং ওয়েবসাইটের সামগ্রিক কনটেন্ট ম্যানেজ করুন।</p><button class="secondary" onclick="showLogin('admin')">Admin Login →</button></article>
+ </div>
+ <div class="notice">ডেমো সংস্করণ: এই ফাইলটি ব্রাউজারে চলে। বাস্তব ওয়েবসাইটে নিরাপদ লগইন, অনলাইন ফাইল স্টোরেজ ও একাধিক ডিভাইসে ডেটা শেয়ার করার জন্য সার্ভার/ডেটাবেস যুক্ত করতে হবে।</div>
+</section>
+
+<section id="login" class="card form hidden">
+ <div class="row"><div><div class="eyebrow">SECURE ACCESS</div><h2 id="loginTitle">Login</h2><p id="loginDesc" class="muted">আপনার অ্যাকাউন্টে প্রবেশ করুন</p></div><button class="secondary" onclick="goHome()">← Back</button></div>
+ <form onsubmit="login(event)"><label>User ID / Username</label><input id="username" autocomplete="username" required><label>Password</label><input id="password" type="password" autocomplete="current-password" required><p id="loginError" class="error small"></p><button type="submit">Login to Panel</button></form>
+</section>
+
+<section id="student" class="hidden">
+ <div class="row"><div><div class="eyebrow">STUDENT DASHBOARD</div><h2>Welcome, Student 👋</h2><p class="muted">আপনার পড়াশোনার উপকরণ এক জায়গায়।</p></div><button class="secondary" onclick="logout()">Logout</button></div>
+ <div class="card"><div class="row"><h2>নোটস ও পরীক্ষার বিষয়বস্তু</h2><span class="small" id="studentCount"></span></div><div id="studentItems"></div></div>
+</section>
+
+<section id="teacher" class="hidden">
+ <div class="row"><div><div class="eyebrow">TEACHER DASHBOARD</div><h2>Teacher Workspace</h2><p class="muted">নতুন শিক্ষাসামগ্রী প্রকাশ করুন।</p></div><button class="secondary" onclick="logout()">Logout</button></div>
+ <div class="card"><h2>নতুন কনটেন্ট আপলোড</h2>
+ <form id="uploadForm" onsubmit="publish(event)">
+  <label>কনটেন্টের শিরোনাম</label><input id="title" placeholder="যেমন: গণিত — অধ্যায় ১" required>
+  <label>কনটেন্টের ধরন</label><select id="kind"><option>নোটস</option><option>পরীক্ষার বিষয়বস্তু</option><option>হোমওয়ার্ক</option><option>অন্যান্য ডকুমেন্ট</option></select>
+  <label>বিষয় / ক্লাস (ঐচ্ছিক)</label><input id="subject" placeholder="যেমন: Class 10 • Mathematics">
+  <label>বিবরণ</label><textarea id="description" rows="4" placeholder="শিক্ষার্থীদের জন্য নির্দেশনা বা বিবরণ লিখুন..."></textarea>
+  <label>ডকুমেন্ট সংযুক্ত করুন (PDF, DOC, ছবি ইত্যাদি)</label><input id="file" type="file" accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.txt,.jpg,.jpeg,.png">
+  <p class="small">ডেমোতে প্রতিটি ফাইলের সর্বোচ্চ সাইজ 5 MB।</p><button type="submit">Publish Content</button><p id="uploadMsg" class="small"></p>
+ </form></div>
+ <div class="card"><h2>আপনার প্রকাশিত কনটেন্ট</h2><div id="teacherItems"></div></div>
+</section>
+
+<section id="admin" class="hidden">
+ <div class="row"><div><div class="eyebrow">ADMIN CONTROL CENTER</div><h2>Website Management</h2><p class="muted">সব প্রকাশিত কনটেন্ট পরিচালনা করুন।</p></div><button class="secondary" onclick="logout()">Logout</button></div>
+ <div class="row" style="margin:18px 0"><div class="stat"><strong id="totalPosts">0</strong><span class="small">মোট পোস্ট</span></div><div class="stat"><strong id="totalFiles">0</strong><span class="small">সংযুক্ত ফাইল</span></div></div>
+ <div class="card"><div class="row"><h2>সব কনটেন্ট</h2><button class="secondary" onclick="exportData()">Export Backup</button></div><div id="adminItems"></div></div>
+ <div class="card"><h2>ডেটা ম্যানেজমেন্ট</h2><p class="muted">এই ব্রাউজারের ডেমো ডেটা JSON ফাইলে ব্যাকআপ নিতে পারবেন।</p><button class="danger" onclick="clearAll()">সব কনটেন্ট মুছে ফেলুন</button></div>
+</section>
+</main>
+<footer>© <span id="year"></span> MOON LIGHT STUDY'S • Built for learning</footer>
+</div>
+<script>
+const credentials={
+ student:{user:"STUDY100",pass:"090909",title:"Student Login"},
+ teacher:{user:"BXXKSE",pass:"SUNDAY001",title:"Teacher Login"},
+ admin:{user:"BARSV STUDIO",pass:"AISHIK@74331221",title:"Admin Login"}
+};
+let role=null, posts=[];
+const $=id=>document.getElementById(id);
+function load(){try{posts=JSON.parse(localStorage.getItem("mls_posts")||"[]")}catch(e){posts=[]}}
+function save(){localStorage.setItem("mls_posts",JSON.stringify(posts))}
+function hideAll(){["home","login","student","teacher","admin"].forEach(id=>$(id).classList.add("hidden"))}
+function goHome(){role=null;hideAll();$("home").classList.remove("hidden");$("topActions").innerHTML=""}
+function showLogin(r){role=r;hideAll();$("login").classList.remove("hidden");$("loginTitle").textContent=credentials[r].title;$("loginDesc").textContent=r==="admin"?"অ্যাডমিন পরিচয় দিয়ে প্রবেশ করুন":"আপনার দেওয়া লগইন তথ্য ব্যবহার করুন";$("loginError").textContent="";$("username").value="";$("password").value=""}
+function login(e){e.preventDefault();let c=credentials[role];if($("username").value===c.user&&$("password").value===c.pass){hideAll();$(role).classList.remove("hidden");$("topActions").innerHTML='<span class="small">Logged in: '+role.toUpperCase()+'</span>';render()}else{$("loginError").textContent="User ID বা Password সঠিক নয়।"}}
+function logout(){goHome()}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function date(s){return new Date(s).toLocaleString("bn-BD",{dateStyle:"medium",timeStyle:"short"})}
+function itemHTML(p,admin=false){return `<article class="item"><div class="row"><div><h3>${esc(p.title)}</h3><div class="meta">${esc(p.kind)} • ${esc(p.subject||"সাধারণ")} • ${date(p.created)}</div></div>${admin?`<button class="danger" onclick="removePost('${p.id}')">Delete</button>`:""}</div>${p.description?`<p>${esc(p.description)}</p>`:""}${p.fileData?`<a href="${p.fileData}" download="${esc(p.fileName)}">⬇ Download: ${esc(p.fileName)}</a>`:""}<div class="small">Uploaded by: ${esc(p.author)}</div></article>`}
+function render(){load();$("studentItems").innerHTML=posts.length?posts.slice().reverse().map(p=>itemHTML(p)).join(""):'<div class="empty">এখনও কোনো কনটেন্ট আপলোড করা হয়নি।</div>';$("studentCount").textContent=posts.length+" items";$("teacherItems").innerHTML=posts.filter(p=>p.author==="Teacher").length?posts.filter(p=>p.author==="Teacher").slice().reverse().map(p=>itemHTML(p,true)).join(""):'<div class="empty">আপনি এখনও কিছু প্রকাশ করেননি।</div>';$("adminItems").innerHTML=posts.length?posts.slice().reverse().map(p=>itemHTML(p,true)).join(""):'<div class="empty">কোনো কনটেন্ট নেই।</div>';$("totalPosts").textContent=posts.length;$("totalFiles").textContent=posts.filter(p=>p.fileData).length}
+function publish(e){e.preventDefault();let f=$("file").files[0];if(f&&f.size>5*1024*1024){$("uploadMsg").textContent="ফাইলটি 5 MB-এর বেশি। ছোট ফাইল নির্বাচন করুন।";$("uploadMsg").className="small error";return}
+ const add=data=>{posts.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2,7),title:$("title").value.trim(),kind:$("kind").value,subject:$("subject").value.trim(),description:$("description").value.trim(),fileName:f?f.name:"",fileData:data||"",author:"Teacher",created:new Date().toISOString()});try{save();$("uploadForm").reset();$("uploadMsg").textContent="সফলভাবে প্রকাশিত হয়েছে!";$("uploadMsg").className="small success";render()}catch(err){$("uploadMsg").textContent="স্টোরেজ পূর্ণ। ছোট ফাইল ব্যবহার করুন বা কিছু কনটেন্ট মুছুন।";$("uploadMsg").className="small error"}};
+ if(f){let r=new FileReader();r.onload=()=>add(r.result);r.onerror=()=>{$("uploadMsg").textContent="ফাইল পড়া যায়নি।"};r.readAsDataURL(f)}else add("");
+}
+function removePost(id){if(confirm("এই কনটেন্টটি মুছে ফেলবেন?")){posts=posts.filter(p=>p.id!==id);save();render()}}
+function clearAll(){if(confirm("সতর্কতা: সব কনটেন্ট স্থায়ীভাবে মুছে যাবে। চালিয়ে যাবেন?")){posts=[];save();render()}}
+function exportData(){let blob=new Blob([JSON.stringify(posts,null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="moon-light-studys-backup.json";a.click();URL.revokeObjectURL(url)}
+$("year").textContent=new Date().getFullYear();load();goHome();
+</script>
+</body></html>
